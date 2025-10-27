@@ -30,4 +30,4 @@ Key folders:
 - Add animations with `framer-motion` (optional)
 
 ## Contact
-Your email here
+roshangawade160@gmail.com
