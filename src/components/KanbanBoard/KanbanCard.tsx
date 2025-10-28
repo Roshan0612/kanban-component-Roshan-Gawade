@@ -4,11 +4,10 @@ import { formatDate, getInitials, getPriorityColor, isOverdue } from '../../util
 
 interface KanbanCardProps {
   task: KanbanTask;
-  index: number;
   onClick?: (task: KanbanTask) => void;
 }
 
-export const KanbanCard: React.FC<KanbanCardProps> = ({ task, index, onClick }) => {
+export const KanbanCard: React.FC<KanbanCardProps> = ({ task, onClick }) => {
   const handleDragStart = (e: React.DragEvent) => {
     e.dataTransfer.setData('text/plain', task.id);
     e.dataTransfer.effectAllowed = 'move';

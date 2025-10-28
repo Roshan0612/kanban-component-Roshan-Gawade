@@ -4,7 +4,7 @@ import KanbanColumn from './KanbanColumn';
 import type { KanbanTask } from './KanbanBoard.types';
 import { useDragAndDrop } from '../../hooks/useDragAndDrop';
 
-export const KanbanBoard: React.FC<KanbanViewProps> = ({ columns, tasks, onTaskMove, onTaskCreate, onTaskUpdate, onTaskDelete }) => {
+export const KanbanBoard: React.FC<KanbanViewProps> = ({ columns, tasks, onTaskMove }: KanbanViewProps) => {
   const { handleDragOver, handleDrop } = useDragAndDrop();
 
   const handleDropOnColumn = (e: React.DragEvent, toColumnId: string) => {

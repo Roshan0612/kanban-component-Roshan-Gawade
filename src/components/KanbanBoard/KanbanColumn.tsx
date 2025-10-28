@@ -33,8 +33,8 @@ export const KanbanColumn: React.FC<KanbanColumnProps> = ({ column, tasks, onTas
         {tasks.length === 0 ? (
           <div className="text-sm text-neutral-500 p-3">No tasks</div>
         ) : (
-          tasks.map((t, idx) => (
-            <KanbanCard key={t.id} task={t} index={idx} onClick={onTaskClick} />
+          tasks.map((t) => (
+            <KanbanCard key={t.id} task={t} onClick={onTaskClick} />
           ))
         )}
       </div>
